@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharmin Eite - Web Developer, Project Manager, Virtual Assistant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+    
+    <input type="checkbox" id="sbn-toggle">
+    <label class="nav-icon" for="sbn-toggle">
+        <div class="hamburger"></div>
+    </label>
+
+    <header class="site-header">
+        <div class="site-brand">
+            <img src="img/sharmin-eite.jpg" class="portrait" alt="Sharmin Eite">
+        </div>
+        <nav class="site-nav">
+            <ul class="site-nav__list">
+                <li>
+                    <a href="/" class="site-nav__link">Home</a>
+                </li>
+                <li>
+                    <a href="/about-me.html" class="site-nav__link">About Me</a>
+                </li>
+                <li>
+                    <a href="/portfolio.html" class="site-nav__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="/contact-me.html" class="site-nav__link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="main-container">
+            <form method="GET" action="about-me.html">
+                <label for="c_name" class="contact-form__label">Name</label>
+                <input type="text" required placeholder="Name" name="c_name" id="c_name" class="contact-form__input" autofocus>
+
+                <label for="c_email" class="contact-form__label">Email</label>
+                <input type="email" required placeholder="Email" name="c_email" id="c_email" class="contact-form__input">
+
+                <label for="c_phone" class="contact-form__label">Phone</label>
+                <input type="tel" required placeholder="Phone" name="c_phone" id="c_phone" class="contact-form__input">
+
+                <label for="c_ds" class="contact-form__label">Desired Service</label>
+                <select name="c_ds" id="c_ds" class="contact-form__select">
+                    <option value="Web Development">Web Development</option>
+                    <option value="Project Management">Project Management</option>
+                    <option value="Virtual Assistance">Virtual Assistance</option>
+                </select>
+
+                <label for="c_message" class="contact-form__label">Message</label>
+                <textarea name="c_message" placeholder="Message" id="c_message" class="contact-form__textarea"></textarea>
+
+                <button type="submit" class="contact-form__submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
